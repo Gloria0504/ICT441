@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Services - Eterna Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Eterna
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">333@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+02-1234-5678</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+  <style>  
+    .image-container {  
+      position: absolute;  
+      top: 8px;  
+      left: 0;  
+    }  
+    .image-container img {  
+  width: 100px;  
+  height: auto;    
+}
+
+  </style>  
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1><a href="index.html">Pigeon  College</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+      <div class="image-container">  
+        <img src="assets/img/441logo.jpg" alt="Your Image">  
+      </div> 
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="equiry.html">Equuiry form</a></li>
+          <li class="dropdown"><a href="courses.html"><span>Courses</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="courses.html">BSBPMG536</a></li>
+              <li><a href="courses.html">ICTSAD604</a></li>
+              <li><a href="courses.html">ICTICT523</a></li>
+              <li><a href="courses.html">ICTCYS601</a></li>
+              <li><a href="courses.html">ICTICT608</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Enquiry</li>
+        </ol>
+        <h2>Enquiry</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <style>  
+      .enquiry_form{
+          display: flex;  
+          flex-direction: column;  
+          align-items: center; /* 垂直居中 */  
+          justify-content: center; /* 水平居中 */
+      }
+
+    </style>    
+  
+  <script>  
+      function validateForm() {  
+        var firstName = document.forms["enquiryForm"]["firstName"].value;  
+        var lastName = document.forms["enquiryForm"]["lastName"].value;  
+        var address = document.forms["enquiryForm"]["address"].value;  
+        var email = document.forms["enquiryForm"]["email"].value;  
+        var age = document.forms["enquiryForm"]["age"].value;  
+        var subject = document.forms["enquiryForm"]["subject"].value;  
+        var errorSubjects = document.getElementById("errorSubjects");  
+        var isValid = true;  
+          
+        // Reset previous error subjects  
+        errorSubjects.innerHTML = "";  
+          
+        // Validate each field  
+        if (firstName === "") {  
+          errorSubjects.innerHTML += "First name can not be empty<br>";  
+          isValid = false;  
+        }  
+        if (lastName === "") {  
+          errorSubjects.innerHTML += "Last name can not be empty<br>";  
+          isValid = false;  
+        }  
+        if (genderValue === '') {
+        document.getElementById("gd").innerHTML = 'Please choose your gender!';
+        isValid = false;
+    } else if (!genderRegex.test(genderValue)) {
+        document.getElementById("gd").innerHTML = 'Choose Gender!';
+        isValid = false;
+    } else {document.getElementById("gd").innerHTML = 'Gender:Right ';document.getElementById("gd").style.color = "Green";}
+        if (address === "") {  
+          errorSubjects.innerHTML += "Address can not be empty<br>";  
+          isValid = false;  
+        }  
+        if (email === "") {  
+          errorSubjects.innerHTML += "Please enter a valid email address<br>";  
+          isValid = false;  
+        } else if (!isValidEmail(email)) {  
+          errorSubjects.innerHTML += "Please enter a valid email address<br>";  
+          isValid = false;  
+        }  
+        if (age === "") {  
+      errorSubjects.innerHTML += "Please enter a valid age (between 18 and 100)<br>";  
+      isValid = false;  
+    } else if (isNaN(age) || age < 18 || age > 100) {  
+      errorSubjects.innerHTML += "Please enter a valid age (between 18 and 100)<br>";  
+      isValid = false;  
+    } else if (age < 18) { // Add this condition to show appropriate subject for age below 18.  
+      alert("Age must be at least 18 years old"); // Show appropriate subject for age below 18.  
+      return true; // Return true to prevent form submission.  
+    } else { // All inputs are valid, show success subject using alert() function.  
+      alert("Fill in all correctly!"); // Show the success subject when all fields are valid.  
+      return true; // Return true to allow form submission.  
+    }  
+        if (subject === "") {  
+          errorSubjects.innerHTML += "Subject can not be empty<br>";  
+          isValid = false;  
+        } else if (subject.length > 150) {  
+          errorSubjects.innerHTML += "Subject exceeds maximum character limit of 150<br>";  
+          isValid = false;  
+        } else { // All inputs are valid, show success subject using alert() function.  
+          alert("Fill in all correctly!"); // Show the success subject when all fields are valid.  
+          return true; // Return true to allow form submission.  
+        }  
+        return isValid; // Return the final isValid value to determine if the form can be submitted.  
+      }  
+        
+      function isValidEmail(email) {  
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;  
+        return re.test(String(email).toLowerCase());  
+      }  
+    </script>  
+  </head>  
+  <body>  
+      <div class="enquiry_form" style="margin: auto; width: 50%; display: block;">  
+        <form name="enquiryForm" onsubmit="return validateForm()">  
+          <h2>Enquiry Form</h2>  
+          <label for="firstName">First Name:</label><br>  
+          <input type="text" id="firstName" name="firstName" required style="width: 300px;"><br>  
+          <label for="lastName">Last Name:</label><br>  
+          <input type="text" id="lastName" name="lastName" required style="width: 300px;"><br> 
+          <label for="gender" id="gd">Gender:</label>
+				  <select id="gender" name="gender" required>
+					<option value="">Please select</option>
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				  </select><br>
+          <label for="address">Address:</label><br>  
+          <input type="text" id="address" name="address" required style="width: 300px;"><br>  
+          <label for="email">Email:</label><br>  
+          <input type="email" id="email" name="email" required style="width: 300px;"><br>  
+          <label for="age">Age:</label><br>  
+          <input type="number" id="age" name="age" required style="width: 300px;"><br>  
+          <label for="subject">Subject:</label><br>  
+          <textarea id="subject" name="subject" rows="4" cols="50" required maxlength="150" style="width: 300px;"></textarea><br>  
+          <input type="submit" value="Submit">  
+        </form>   
+        <div id="errorSubjects"></div>  
+      </div>  
+
+      <div class="image">  
+        <img src="assets/img/enquiry.jpg" alt="Your Image">  
+      </div> 
+     <style>
+      .image {  
+        position: absolute;  
+        top: 320px;; /* 根据需要调整图片与表单顶部的距离 */  
+        right: 100px; /* 将图片定位到表单的右侧 */ 
+        
+      }
+      </style>
+    </body>
+
+    
+    
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Our Newsletter</h4>
+            <p>You can get in touch with us by subscribing to the forum to add feedback, comments, etc</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Equuiry</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Courses</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Courses</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">BSBPMG536</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">ICTSAD604</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">ICTICT523</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">ICTCYS601</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">ICTICT608</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              1 Smith Street <br>
+              Sydney NSW 2000<br>
+              Sydney, New South Wales Australia <br><br>
+              <strong>Phone:</strong> +02-1234-5678<br>
+              <strong>Email:</strong> 333@gmail.com<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About Pigeon College</h3>
+            <p>Pigeon college has a strong reputation in the areas of managing project risk, managing and communicating ICT solutions, collecting data to determine business needs, creating cybersecurity standards for organizations, and interacting with customers on a business level.  </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Pigeon College</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">21IT1 Gloria</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
